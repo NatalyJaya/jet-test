@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: jetflow-demo
+    runtime: docker
+    plan: free
+    region: frankfurt
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
